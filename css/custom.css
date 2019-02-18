@@ -1,0 +1,13 @@
+#nav-menu-container{
+	padding-top: 29px;
+}
+.header-scrolled .scrolltohide{
+	display: none;
+}
+.scrollto{
+	display: none;
+}
+
+.header-scrolled .scrollto{
+	display: block;
+}

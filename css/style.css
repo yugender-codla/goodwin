@@ -8,9 +8,11 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
+  background: url("../img/abstract-background.jpg");
   color: #666666;
   font-family: "Open Sans", sans-serif;
+    background-repeat:no-repeat;
+  background-size:cover;
 }
 
 a {
@@ -518,33 +520,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 32px;
   color: #111;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   position: relative;
   padding-bottom: 15px;
 }
 
-.section-header h3::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-header h3::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #20409a;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
 
 .section-header p {
   text-align: center;
@@ -600,13 +581,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+/* Main section */
+#main{
+	padding: 1.2em;
+	
+}
+
+
 /* About Us Section
 --------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/abstract-background.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
+
 }
 
 #about::before {
@@ -617,12 +606,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   bottom: 0;
   background: rgba(255, 255, 255, 0.92);
+  
   z-index: 9;
 }
 
 #about .container {
   position: relative;
   z-index: 10;
+  
 }
 
 #about .about-col {
@@ -1456,4 +1447,217 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+   
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+    text-align: left;
+}
+
+
+#work {
+  background: url("../img/abstract-background.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+
+}
+
+#work::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  
+  z-index: 9;
+}
+
+#work .container {
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+#work .container .padding{
+	padding-left: 150px;
+}
+}
+
+
+
+#work2 {
+  background: url("../img/abstract-background.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+
+}
+
+#work2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  
+  z-index: 9;
+}
+
+#work2 .container {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+
+#execTeam {
+  background: url("../img/abstract-background.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+
+}
+
+#execTeam::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  
+  z-index: 9;
+}
+
+#execTeam .container {
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+#execTeam .container .padding{
+	padding-left: 150px;
+}
+}
+
+
+
+#gallery {
+  background: url("../img/abstract-background.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+
+}
+
+#gallery::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  
+  z-index: 9;
+}
+
+#gallery .container {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+#gallery img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+}
+
+#gallery img:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+ 
+}
+
+
+#gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+#clients {
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+
+}
+
+#clients::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  
+  z-index: 9;
+}
+
+#clients .container {
+  position: relative;
+  z-index: 10;
 }

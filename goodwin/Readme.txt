@@ -7,7 +7,6 @@ Notes:
 6) Release goodwin.zip to godaddy
 
 At godaddy:
-
-1) replace goodwin.zip with the new zip file from local
-2) extract the zip at godaddy
-
+1) in local create zip - right click on goodwin folder and select sendto compressed zip folder. make sure the file name is goodwin.zip
+1) upload goodwin.zip - overwrite the file which already exists in godaddy
+2) extract the zip at godaddy. 

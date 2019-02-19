@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   transition: background 0.5s;
-  z-index: 11;
+  z-index: 200;
 }
 
 .back-to-top i {
@@ -349,16 +349,17 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #58585a;
-  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 13px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   outline: none;
 }
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
-  color: #20409a;
+  color: #ffff00;
 }
 
 .nav-menu > li {
